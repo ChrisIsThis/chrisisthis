@@ -68,7 +68,7 @@
                 font-weight: bold;
             }
             p.lead {
-                margin-top: 15%;
+                margin-top: 5em;
                 font-size: 3.5rem;
             }
             p.small {
@@ -156,21 +156,43 @@
               opacity: 0.7;
 
             }
-
-            @media screen and (min-width: 40em) {
+            .something-weird {
+              color: #c4c4cc;
+              font-size: 1em;
+            }
+            .something-weird:hover {
+              text-decoration: none;
+              background-color: #c4c4cc;
+              color: #03031a
+            }
+            @media screen and (max-width: 35em) {
               .card {
                 flex: 0 1 calc(100% - 0.1em);
               }
               .fa {
-                font-size: 0.5em;
+                font-size: 0.7em;
+              }
+              h1 {
+                font-size: 5em;
+              }
+              p.lead {
+                margin-top: 9em;
+                font-size: 2.5rem;
               }
             }
-            @media screen and (min-width: 50em) {
+            @media screen and (min-width: 35em) and (max-width: 60em) {
               .card {
                 flex: 0 1 calc(50% - 0.1em);
               }
               .fa {
                 font-size: 1em;
+              }
+              h1 {
+                font-size: 5em;
+              }
+              p.lead {
+                margin-top: 7em;
+                font-size: 3rem;
               }
             }
             @media screen and (min-width: 60em) {
@@ -217,7 +239,7 @@
             <br >
             <div class="row text-center chaortica-fancy-font">
                 <p class="med text-muted col-xs-12">
-                    <a class="typeform-share" style="color: #262d61" href="mailto:art@chrisisthis.com" data-mode="2" target="_blank">let's make something weird together</a>
+                    <a class="something-weird" href="mailto:art@chrisisthis.com" data-mode="2" target="_blank"><span id="weird">let's make something weird together</span></a>
                 </p>
 
             </div>
@@ -413,7 +435,8 @@
 
             </div>
         </div>
-
+        <!--  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+        <script  src="index.js"></script> -->
 
     </body>
 </html>

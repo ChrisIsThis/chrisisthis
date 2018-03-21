@@ -87,6 +87,7 @@
             .thumbnail {
               margin-bottom: 0px;
               border-radius: 0px;
+              border: none;
             }
             .col-xs-6, .col-sm-4, .col-md-4 {
               padding-left: 4px;
@@ -131,9 +132,56 @@
             .fa-instagram {
               background: #cd486b;
               color: white;
-
+            }
+            .cards {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: space-between;
+            }
+            .card {
+              background-color: white;
+              margin-bottom: 0.4em;
+            }
+            h2 {
+              font-size: 1.5em;
+              padding-bottom: 0.4em;
+            }
+            .img-overlay {
+              position: absolute;
+              padding: 0.4em;
+              margin-left: 0.4em;
+              margin-top: 0.4em;
+              color: #fff;
+              background-color: #03031a;
+              opacity: 0.7;
 
             }
+
+            @media screen and (min-width: 40em) {
+              .card {
+                flex: 0 1 calc(100% - 0.1em);
+              }
+              .fa {
+                font-size: 0.5em;
+              }
+            }
+            @media screen and (min-width: 50em) {
+              .card {
+                flex: 0 1 calc(50% - 0.1em);
+              }
+              .fa {
+                font-size: 1em;
+              }
+            }
+            @media screen and (min-width: 60em) {
+               .card {
+                 flex: 0 1 calc(33% - 0.1em);
+               }
+               .fa {
+                 font-size: 1.5em;
+               }
+            }
+
         </style>
     </head>
     <body>
@@ -176,123 +224,156 @@
 
             <hr />
 
-            <!-- Portraits -->
+            <!-- Projects -->
             <div class="row text-center">
-                <h2 class="chaortica-fancy-font">recent projects</h2>
+                <h2>recent projects</h2>
+                <div class="centered">
+                    <section class="cards">
+                        <article class="card">
+                          <div class="thumbnail">
+                              <div class="thumbnail-container">
+                                <div class='img-overlay' style="font-size: 1.2em">Meow Wolf Outside</div>
+                                <img src="https://i.imgur.com/01Db3J8.jpg" class="img-thumbnail" />
 
-                <!-- Adalyn -->
-                <div class="col-xs-6 col-sm-4 col-md-4">
-                    <div class="thumbnail">
-                        <img src="https://i.imgur.com/01Db3J8.jpg" class="img-thumbnail" />
-                        <div class="caption">
-                            <p class="chaortica-fancy-font">Meow Wolf Outside</p>
-                            <p class="small"><i>A cross-Austin immersive scavenger hunt at SxSW</i> </p>
-                            <p class="small">Helped design participant interactions, performed in various roles, problem solved</p>
-                        </div>
-                    </div>
+                              </div>
+                              <div class="caption">
+                                  <p class="small"><i>A cross-Austin immersive scavenger hunt at SxSW</i> </p>
+                                  <p class="small">Helped design participant interactions, performed in various roles, problem solved</p>
+                              </div>
+                          </div>
+                        </article><!-- /card-one -->
+
+                        <article class="card">
+                          <div class="thumbnail">
+                            <div class="thumbnail-container">
+                              <div class='img-overlay' style="font-size: 1.2em">Strangetown, USA</div>
+                              <img src="https://i.imgur.com/f7RfK26.jpg" class="img-thumbnail" />
+
+                            </div>
+
+                              <div class="caption">
+                                <p class="small"><i>A music video for the artist Pancho Morris</i> </p>
+                                <p class="small">Helped craft video narrative, led factory art design and produced 120-person shoot</p>
+                            </div>
+                          </div>
+                        </article><!-- /card-two -->
+
+                        <article class="card">
+                          <div class="thumbnail">
+                            <div class="thumbnail-container">
+                              <div class='img-overlay' style="font-size: 1.2em">CA$H</div>
+                              <img src="https://i.imgur.com/DBPDEEJ.png" class="img-thumbnail" />
+
+                            </div>
+
+                              <div class="caption">
+                                <p class="small"><i>An immersive project for a Take 3 event</i> </p>
+                                <p class="small">Helped design participant interactions, created support materials, and performed</p>
+                            </div>
+                          </div>
+                        </article><!-- /card-three -->
+
+                        <article class="card">
+                          <div class="thumbnail">
+                            <div class="thumbnail-container">
+                              <div class='img-overlay' style="font-size: 1.2em">Chaortica Cruiselines</div>
+                              <img src="https://i.imgur.com/bv3lKNC.png" class="img-thumbnail" />
+
+                            </div>
+
+                              <div class="caption">
+
+                                <p class="small"><i>A surrealist, Titanic-esque immersive experience</i> </p>
+                                <p class="small">Co-wrote, produced, designed sets, and played one of the lead roles</p>
+                            </div>
+                          </div>
+                        </article><!-- /card-four -->
+
+                        <article class="card">
+                          <div class="thumbnail">
+
+                            <div class="thumbnail-container">
+                              <div class='img-overlay' style="font-size: 1.2em">Helios and Luna</div>
+                              <img src="https://i.imgur.com/wAvqrvm.jpg" class="img-thumbnail" />
+
+                            </div>
+
+                              <div class="caption">
+
+                                <p class="small"><i>A sun/moon cult theme ritual at the Solvana Festival</i> </p>
+                                <p class="small">Wrote narrative, designed interaction and managed team of performers</p>
+                            </div>
+                          </div>
+                        </article><!-- /card-four -->
+
+                        <article class="card">
+                          <div class="thumbnail">
+                            <div class="thumbnail-container">
+                              <div class='img-overlay' style="font-size: 1.2em">The Shrine of Dough</div>
+                              <img src="https://i.imgur.com/mzwoE7Z.jpg" class="img-thumbnail" />
+
+                            </div>
+
+                              <div class="caption">
+
+                                  <p class="small"><i>A dough-themed statue and cult following at Burning Man</i> </p>
+                                  <p class="small">Developed theme, helped construct statue, and led performance</p>
+                              </div>
+                          </div>
+                        </article><!-- /card-four -->
+
+                        <article class="card">
+                          <div class="thumbnail">
+                            <div class="thumbnail-container">
+                              <div class='img-overlay' style="font-size: 1.2em">The Anglecan Church</div>
+                              <img src="https://i.imgur.com/uq4w7li.jpg" class="img-thumbnail" />
+
+                            </div>
+
+                              <div class="caption">
+
+                                  <p class="small"><i>An immersive project for a Take 3 event</i> </p>
+                                  <p class="small">Helped design participant interactions, created support materials, and performed</p>
+                              </div>
+                          </div>
+                        </article><!-- /card-four -->
+
+                        <article class="card">
+                          <div class="thumbnail">
+
+                            <div class="thumbnail-container">
+                              <div class='img-overlay' style="font-size: 1.2em">Haight Free Love</div>
+                                <img src="https://i.imgur.com/jGo3jaC.png" class="img-thumbnail" />
+
+                            </div>
+
+                              <div class="caption">
+
+                                <p class="small"><i>A series of community-powered Summer of Love street events</i> </p>
+                                <p class="small">Produced, crafted themes, and organized community engagement</p>
+                            </div>
+                          </div>
+                        </article><!-- /card-four -->
+
+                        <article class="card">
+                          <div class="thumbnail">
+                            <div class="thumbnail-container">
+                              <div class='img-overlay' style="font-size: 1.2em">No Party Party</div>
+                              <img src="https://i.imgur.com/FfbdrDC.jpg" class="img-thumbnail" />
+
+                            </div>
+
+                              <div class="caption">
+
+                                  <p class="small"><i>An immersive project for a Take 3 event</i> </p>
+                                  <p class="small">Helped design participant interactions, created support materials, and performed</p>
+                              </div>
+                          </div>
+                        </article><!-- /card-four -->
+                    </section>
                 </div>
-                <div class="clearfix visible-xs-block"></div>
-                <!-- Chris -->
-                <div class="col-xs-6 col-sm-4 col-md-4">
-                    <div class="thumbnail">
-                        <img src="https://i.imgur.com/f7RfK26.jpg" class="img-thumbnail" />
-                        <div class="caption">
-                          <p class="chaortica-fancy-font">Strangetown, USA</p>
-                          <p class="small"><i>A music video for the artist Pancho Morris</i> </p>
-                          <p class="small">Helped craft video narrative, led factory art design and produced 120-person shoot</p>
-                      </div>
-                    </div>
-                </div>
-
-                <div class="clearfix visible-xs-block"></div>
-
-                <!-- Jon -->
-                <div class="col-xs-6 col-sm-4 col-md-4">
-                    <div class="thumbnail">
-                        <img src="https://i.imgur.com/DBPDEEJ.png" class="img-thumbnail" />
-                        <div class="caption">
-                          <p class="chaortica-fancy-font">CA$H</p>
-                          <p class="small"><i>An immersive project for a Take 3 event</i> </p>
-                          <p class="small">Helped design participant interactions, created support materials, and performed</p>
-                      </div>
-                    </div>
-                </div>
-
-                <div class="clearfix visible-sm-block"></div>
-                <div class="clearfix visible-lg-block"></div>
-                <!-- Jen -->
-                <div class="col-xs-6 col-sm-4 col-md-4">
-                    <div class="thumbnail">
-                        <img src="https://i.imgur.com/bv3lKNC.png" class="img-thumbnail" />
-                        <div class="caption">
-                          <p class="chaortica-fancy-font">Chaortica Cruiselines</p>
-                          <p class="small"><i>A surrealist, Titanic-esque immersive experience</i> </p>
-                          <p class="small">Co-wrote, produced, designed sets, and played one of the lead roles</p>
-                      </div>
-                    </div>
-                </div>
-
-                <div class="clearfix visible-xs-block"></div>
-                <div class="clearfix visible-md-block"></div>
 
 
-                <!-- Stephen -->
-                <div class="col-xs-6 col-sm-4 col-md-4">
-                    <div class="thumbnail">
-                        <img src="https://i.imgur.com/wAvqrvm.jpg" class="img-thumbnail" />
-                        <div class="caption">
-                          <p class="chaortica-fancy-font">Helios and Luna</p>
-                          <p class="small"><i>A sun/moon cult theme ritual at the Solvana Festival</i> </p>
-                          <p class="small">Wrote narrative, designed interaction and managed team of performers</p>
-                      </div>
-                    </div>
-                </div>
-
-                <!-- Jesse -->
-                <div class="col-xs-6 col-sm-4 col-md-4">
-                    <div class="thumbnail">
-                        <img src="https://i.imgur.com/mzwoE7Z.jpg" class="img-thumbnail" />
-                        <div class="caption">
-                            <p class="chaortica-fancy-font">The Shrine of Dough</p>
-                            <p class="small"><i>A dough-themed statue and cult following at Burning Man</i> </p>
-                            <p class="small">Developed theme, helped construct statue, and led performance</p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="clearfix visible-sm-block"></div>
-
-                <!-- Katya -->
-                <div class="col-xs-6 col-sm-4 col-md-4">
-                    <div class="thumbnail">
-                        <img src="https://i.imgur.com/uq4w7li.jpg" class="img-thumbnail" />
-                        <div class="caption">
-                            <p class="chaortica-fancy-font">The Anglecan Church</p>
-                            <p class="small"><i>An immersive project for a Take 3 event</i> </p>
-                            <p class="small">Helped design participant interactions, created support materials, and performed</p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- Nikkia -->
-                <div class="col-xs-6 col-sm-4 col-md-4">
-                    <div class="thumbnail">
-                        <img src="https://i.imgur.com/jGo3jaC.png" class="img-thumbnail" />
-                        <div class="caption">
-                          <p class="chaortica-fancy-font">Haight Free Love</p>
-                          <p class="small"><i>A series of community-powered Summer of Love street events</i> </p>
-                          <p class="small">Produced, crafted themes, and organized community engagement</p>
-                      </div>
-                    </div>
-                </div>
-
-
-                <div class="clearfix visible-xs-block"></div>
-                <div class="clearfix visible-sm-block"></div>
-                <div class="clearfix visible-md-block"></div>
-                <div class="clearfix visible-lg-block"></div>
 
             </div>  <!-- /portraits -->
 

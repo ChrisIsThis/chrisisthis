@@ -5,9 +5,6 @@ html, body {
   background-color: #070723;
   height: 100%;
 }
-.mc-field-group {
-    margin-bottom: 2px;
-}
 
 .chaortica-content {
     padding: 20px 50px 0 50px;
@@ -15,12 +12,7 @@ html, body {
     font-size: 1.5em;
     font-weight: 400;
 }
-dt {
-    font-family: 'Open Sans', sans-serif;
-}
-.med {
-    font-size: 3.0rem;
-}
+
 .thumbnail {
   margin-bottom: 0px;
   border-radius: 0px;
@@ -84,10 +76,10 @@ dt {
     padding: 50px 0;
     height: 100%
   }
-.navbar {
-  background: white;
-  color: #070723
-}
+  .navbar {
+    background: white;
+    color: #070723
+  }
 
 
 /******* MAIN *******/
@@ -128,18 +120,44 @@ dt {
       display: block;
       text-align: center
   }
-  #about h2 {
-    font-size: 2.5em !important
+  #about .about-hi {
+    font-size: 2.5em
+  }
+  #about .about-bio {
+    font-size: 1.8em;
+    padding-bottom: 1em
   }
   #about .side-image {
       width: 30%;
       height: 100%;
       float: left;
+      padding-top: 3%
   }
+
   #about .side-image img {
     display: block;
     height: auto;
     max-width: 100%;
+  }
+  #about .about-make-div {
+    margin-top: 5%
+  }
+  #about .about-make-together {
+    font-size: 2em;
+    border: 3px solid #ffffff;
+    padding: 0.5em;
+    color:#070723;
+    background-color: #ffffff;
+    border-radius: none !important
+  }
+  #about .about-make-together:hover {
+    background-color: #c4c4cc;
+    cursor: pointer;
+    text-decoration: none;
+    color: #03031a
+  }
+  #about .about-make-mobile {
+    display: none;
   }
   .something-weird {
     color: #c4c4cc;
@@ -147,8 +165,9 @@ dt {
   }
   .something-weird:hover {
     text-decoration: none;
-    background-color: #c4c4cc;
     color: #03031a
+    border: 5px solid #ffffff;
+    padding: 0px -5px 0px -5px;
   }
 
 
@@ -293,11 +312,77 @@ dt {
       font-size: 7em;
       padding-right: 0;
     }
+
     p.lead {
       margin-top: 12em;
       font-size: 2rem;
       padding-left:0
     }
+    #about .about-hi {
+      font-size: 1.5em !important
+    }
+    #about .about-make-div {
+      display: none;
+    }
+    #about .about-make-mobile {
+      display: inline-block;
+    }
+    #about .about-make-together {
+      font-size: 1.2em;
+      margin-left: 2em;
+    }
+    #about .about-bio {
+      font-size: 1.2em;
+      padding-bottom: 4em
+    }
+    #about .about-extra{
+      display: none
+    }
+    #about .side-image {
+      display: none
+    }
+    #about .about-text {
+      width: 90%
+    }
+    #work-together {
+      padding-top:0px;
+    }
+    .work-header {
+      font-size: 1.2em;
+      width: 95%;
+      margin-top: -5%;
+      margin-bottom: -10%
+    }
+    #action-steps {
+      font-size: .8em
+    }
+    .action-detail {
+      width: 95%;
+      padding-left: 7% !important;
+      margin-top: -25px;
+    }
+    .action-detail .display-long {
+      margin-top: 0px
+    }
+
+    .action-detail div h3 {
+      padding-top: 0px;
+      font-size: 0.7em
+    }
+    #projects h2 {
+      font-size: 2em
+    }
+    .fa {
+        padding:10%;
+
+        font-size: 1.5em !important;
+        width: 30%;
+
+    }
+    .contact-row {
+      margin-left: 2%
+    }
+
   }
   /* Large Screen -- for the cards only*/
   @media screen and (min-width: 60em) {

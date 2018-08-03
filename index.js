@@ -1,4 +1,4 @@
-var textArray = document.getElementById('weird').innerHTML.split('')
+/*var textArray = document.getElementById('weird').innerHTML.split('')
 var colorArray = [];
 var counter = 0;
 
@@ -21,7 +21,7 @@ setInterval(function(){
   }
   document.getElementById("weird").innerHTML = colorArray.join('');
   colorArray = [];
-},700);
+},700);*/
 
 function clickHide() {
   var stepArr = ["#stepOne","#stepTwo","#stepThree","#stepFour","#stepFive"];
@@ -44,3 +44,6 @@ function clickHide() {
     }
   }
 }
+$('.navbar-collapse a').click(function(){
+    $(".navbar-collapse").collapse('hide');
+});

@@ -1,0 +1,315 @@
+html, body {
+  font-family: "Open Sans",Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  color: #c4c4cc;
+  background-color: #070723;
+  height: 100%;
+}
+.mc-field-group {
+    margin-bottom: 2px;
+}
+
+.chaortica-content {
+    padding: 20px 50px 0 50px;
+    text-align: justify;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+dt {
+    font-family: 'Open Sans', sans-serif;
+}
+.med {
+    font-size: 3.0rem;
+}
+.thumbnail {
+  margin-bottom: 0px;
+  border-radius: 0px;
+  border: none;
+}
+.col-xs-6, .col-sm-4, .col-md-4 {
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-bottom: 8px;
+}
+.img-thumbnail {
+  padding: 0px;
+  border: none;
+  border-radius: 0px;
+}
+
+
+/******* UNIVERSAL *******/
+.main-bg {
+    color: white;
+    height: 500px;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif !important;
+    /*text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;*/
+    background: url(https://i.imgur.com/YHAwYdI.png?1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    padding: 40px 50px 50px 50px;
+    background-color: #361B32;
+    border-bottom: 10px solid #ffffff;
+    border-top: 10px solid #c4c4cc;
+}
+
+  h1 {
+      font-size: 7.5em;
+      font-weight: 900;
+      color: #fff ; /* same as background */
+      /*background: #1a1a1a;*/
+      -webkit-background-clip: text;
+      -webkit-text-stroke: 5px transparent;
+      opacity: 1;
+      padding-right: 20%
+  }
+  hr {
+      background: #c4c4cc;
+      height: 3px;
+      border: none;
+      width: 60%;
+  }
+  .fancy-font {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1em;
+      font-weight: bold;
+  }
+  h2 {
+    font-size: 2em;
+    padding-bottom: 0.4em;
+  }
+  .pad-section {
+    padding: 50px 0;
+    height: 100%
+  }
+.navbar {
+  background: white;
+  color: #070723
+}
+
+
+/******* MAIN *******/
+
+  .band {
+    width: 100%;
+    background-color: #03031a;
+    opacity: 0.6;
+  }
+  p.lead {
+      margin-top: 10em;
+      font-size: 3.5rem;
+      padding-left: 20%
+  }
+  p.small {
+      font-size: 1.6rem;
+  }
+
+
+
+/******* ABOUT *******/
+  #about {
+      width: 100%;
+      display: inline-block;
+      padding-left: 10%
+  }
+  #about .about-text {
+      width: 60%;
+      height: auto;
+      float: left;
+      padding-left: 10%;
+      padding-top: 5%
+
+  }
+  #about .about-text h3 {
+      margin: 0;
+      padding: 0;
+      display: block;
+      text-align: center
+  }
+  #about h2 {
+    font-size: 2.5em !important
+  }
+  #about .side-image {
+      width: 30%;
+      height: 100%;
+      float: left;
+  }
+  #about .side-image img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+  }
+  .something-weird {
+    color: #c4c4cc;
+    font-size: 1em;
+  }
+  .something-weird:hover {
+    text-decoration: none;
+    background-color: #c4c4cc;
+    color: #03031a
+  }
+
+
+
+/******* WORK TOGETHER *******/
+ #work-together {
+   background-color: #ffffff;
+   width: 100%;
+   color: #070723
+ }
+  #action-steps {
+    margin-top: 15%;
+    background-color: #c4c4cc;
+    color: #070723;
+  }
+  .active-li {
+    background-color: #070723 !important;
+    color: #ffffff;
+  }
+  .display-long {
+    display: block;
+    margin-top: 15%;
+    color: #03031a
+  }
+  .display-hide {
+    display: none;
+  }
+  .subtext {
+    padding-bottom: 5%
+  }
+  #work-together div div ul li {
+    cursor: pointer
+  }
+
+
+
+/******* PROJECTS *******/
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .card {
+    background-color: white;
+    margin-bottom: 0.4em;
+  }
+
+  .img-overlay {
+    position: absolute;
+    padding: 0.4em;
+    margin-left: 0.4em;
+    margin-top: 0.4em;
+    color: #fff;
+    background-color: #03031a;
+    opacity: 0.7;
+
+  }
+  #projects h2 {
+    font-size: 3em;
+    padding-top: 5%
+  }
+
+
+/******* CONTACT *******/
+
+.fa {
+    padding: 4%;
+    font-size: 2.5em !important;
+    width: 10%;
+
+    text-align: center;
+    text-decoration: none;
+}
+.fa:hover {
+    opacity: 0.7;
+    color: black;
+    text-decoration: none;
+}
+.fa-envelope {
+    background: #c71610;
+    color: white;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+  background: #cd486b;
+  color: white;
+}
+#contact {
+  background: #ffffff;
+  width: 100%;
+  margin-top: 2%;
+  padding-top: 5%;
+}
+.centered {
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  width:100%
+}
+#contact div p, #contact div h2 {
+  color: #070723 !important;
+}
+
+
+/******* MOBILE *******/
+
+  /* Medium Screen */
+  @media screen and (min-width: 35em) and (max-width: 60em) {
+    .card {
+      flex: 0 1 calc(50% - 0.1em);
+    }
+    .fa {
+      font-size: 1em;
+    }
+    h1 {
+      font-size: 7em;
+      padding-right: 0;
+    }
+    p.lead {
+      margin-top: 11em;
+      font-size: 3rem;
+      padding-left:0
+    }
+  }
+  /* Small Screen */
+  @media screen and (max-width: 35em) {
+    .card {
+      flex: 0 1 calc(100% - 0.1em);
+    }
+    .fa {
+      font-size: 0.7em;
+    }
+    h1 {
+      font-size: 7em;
+      padding-right: 0;
+    }
+    p.lead {
+      margin-top: 12em;
+      font-size: 2rem;
+      padding-left:0
+    }
+  }
+  /* Large Screen -- for the cards only*/
+  @media screen and (min-width: 60em) {
+     .card {
+       flex: 0 1 calc(33% - 0.1em);
+     }
+     .fa {
+       font-size: 1.5em;
+     }
+  }
+  @media(max-width: 500px) {
+      .main-bg h1 {
+          font-size: 3em;
+      }
+  }

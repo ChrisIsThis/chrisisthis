@@ -9,465 +9,307 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
         <link rel="icon" type="image/png" sizes="32x32" href="  ">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="index.css">
         <style>
             @import url(https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans|Russo+One|Orbitron:400,900);
-            @media(max-width: 500px) {
-                .chaortica-header h1 {
-                    font-size: 3em;
-                }
-            }
-            html, body {
-              font-family: "Open Sans",Helvetica,Arial,sans-serif;
-              font-weight: 400;
-              color: #c4c4cc;
-              background-color: #03031a;
-              height: 100%;
-            }
-            .mc-field-group {
-                margin-bottom: 2px;
-            }
-            .chaortica-header {
-                color: white;
-                height: 500px;
-                width: 100%;
-                font-family: 'Open Sans', sans-serif !important;
-                /*text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;*/
-                background: url(https://i.imgur.com/YHAwYdI.png?1);
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: 50% 50%;
-                padding: 40px 50px 50px 50px;
-                background-color: #361B32;
-                border-bottom: 10px solid #c4c4cc;
-                border-top: 10px solid #c4c4cc;
-            }
-            .chaortica-content {
-                padding: 20px 50px 0 50px;
-                text-align: justify;
-                font-size: 1.5em;
-                font-weight: 400;
-            }
-            h1 {
-                font-size: 7.5em;
-                font-weight: 900;
-                color: #fff ; /* same as background */
-                /*background: #1a1a1a;*/
-                -webkit-background-clip: text;
-                -webkit-text-stroke: 5px transparent;
-                opacity: 1;
-            }
-            hr {
-                background: #c4c4cc;
-                height: 3px;
-                border: none;
-                width: 60%;
-            }
-            .chaortica-fancy-font {
-                font-family: 'Open Sans', sans-serif;
-                font-size: 1em;
-                font-weight: bold;
-            }
-            p.lead {
-                margin-top: 5em;
-                font-size: 3.5rem;
-            }
-            p.small {
-                font-size: 1.6rem;
-            }
-            dt {
-                font-family: 'Open Sans', sans-serif;
-            }
-            .chaortica-watermark {
-                max-width: 110px;
-                width: 15%;
-            }
-            .med {
-                font-size: 3.0rem;
-            }
-            .thumbnail {
-              margin-bottom: 0px;
-              border-radius: 0px;
-              border: none;
-            }
-            .col-xs-6, .col-sm-4, .col-md-4 {
-              padding-left: 4px;
-              padding-right: 4px;
-              padding-bottom: 8px;
-            }
-            .img-thumbnail {
-              padding: 0px;
-              border: none;
-              border-radius: 0px;
-            }
-            .band {
-              width: 100%;
-              background-color: #03031a;
-              opacity: 0.6;
-            }
-            .fa {
-                padding: 4%;
-                font-size: 1.5em;
-                width: 10%;
 
-                text-align: center;
-                text-decoration: none;
-            }
-            .fa:hover {
-                opacity: 0.7;
-                color: black;
-                text-decoration: none;
-            }
-            .fa-envelope {
-                background: #c71610;
-                color: white;
-            }
-            .fa-facebook {
-                background: #3B5998;
-                color: white;
-            }
-            .fa-twitter {
-              background: #55ACEE;
-              color: white;
-            }
-            .fa-instagram {
-              background: #cd486b;
-              color: white;
-            }
-            .cards {
-              display: flex;
-              flex-wrap: wrap;
-              justify-content: space-between;
-            }
-            .card {
-              background-color: white;
-              margin-bottom: 0.4em;
-            }
-            h2 {
-              font-size: 1.5em;
-              padding-bottom: 0.4em;
-            }
-            .img-overlay {
-              position: absolute;
-              padding: 0.4em;
-              margin-left: 0.4em;
-              margin-top: 0.4em;
-              color: #fff;
-              background-color: #03031a;
-              opacity: 0.7;
-
-            }
-            .something-weird {
-              color: #c4c4cc;
-              font-size: 1em;
-            }
-            .something-weird:hover {
-              text-decoration: none;
-              background-color: #c4c4cc;
-              color: #03031a
-            }
-            @media screen and (max-width: 35em) {
-              .card {
-                flex: 0 1 calc(100% - 0.1em);
-              }
-              .fa {
-                font-size: 0.7em;
-              }
-              h1 {
-                font-size: 5em;
-              }
-              p.lead {
-                margin-top: 9em;
-                font-size: 2.5rem;
-              }
-            }
-            @media screen and (min-width: 35em) and (max-width: 60em) {
-              .card {
-                flex: 0 1 calc(50% - 0.1em);
-              }
-              .fa {
-                font-size: 1em;
-              }
-              h1 {
-                font-size: 5em;
-              }
-              p.lead {
-                margin-top: 7em;
-                font-size: 3rem;
-              }
-            }
-            @media screen and (min-width: 60em) {
-               .card {
-                 flex: 0 1 calc(33% - 0.1em);
-               }
-               .fa {
-                 font-size: 1.5em;
-               }
-            }
 
         </style>
     </head>
     <body>
 
-        <!-- Header -->
-        <div class="container-fluid chaortica-header text-center page-header" style="position: relative;">
-            <div class="band">
-              <h1>chris is this:</h1>
-            </div>
+      <!-- navigation panel -->
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#home" style="color: #070723">chris swimmer</a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar-collapse-main">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#about">about</a></li>
+              <li><a href="#work-together">working together</a></li>
+              <li><a href="#projects">projects</a></li>
+              <li><a href="#contact" style="color: #070723">contact</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
 
-            <div class="band">
-              <p class="lead">creator |  navigator |  story maker</p>
-              <!-- <p>"Let's make the reality of our minds the reality of our reality. "</p> -->
-            </div>
-        </div>
+      <!-- Header -->
+      <div class="container-fluid main-bg text-center page-header pad-section" style="position: relative;">
+          <div class="band">
+            <h1>chris is this:</h1>
+          </div>
 
-        <!-- Content -->
-        <div class="container chaortica-content text-center center-block">
+          <div class="band">
+            <p class="lead">creator |  navigator |  story maker</p>
+          </div>
+      </div>
 
-            <!-- Nav -->
+      <!-- About -->
+      <div id="about" class="pad-section">
+          <div class="side-image">
+              <img src="https://i.imgur.com/6RZZF9p.jpg" title="photo by Camille de Nes" />
+          </div>
+          <div class="about-text">
+              <h2 class="text-center">Hi. I'm Chris Swimmer.</h2>
+              <br>
+              <h3>I'm a visual artist, producer, performer and all-around creator with
+                      an eye for the strange, silly, and provocative. I believe that with the right
+                      combination of vision, collaboration, and sheer scrappiness, even the most ridiculous
+                      ideas can be brought to life. I look at disparate threads and braid them together.
+                       I know that sometimes art is best made with hands and sometimes with spreadsheets.</h3><br><br>
+             <div class="row text-center fancy-font">
+                 <h2>
+                     <a class="something-weird" href="mailto:art@chrisisthis.com" data-mode="2" target="_blank"><span id="xweird">And all of it is made better together.</span></a>
+                 </h2>
+             </div>
+          </div>
+      </div>
 
-            <hr />
-            <!-- About -->
-            <div class="row">
-                <p class="col-sm-offset-1 col-sm-10">
-                    Chris Swimmer is an artist, producer, performer and all-around creator with an eye for the strange, silly, and provocative.
-                    He believes that with the right combination of vision, collaboration, and sheer scrappiness,
-                     even the most ridiculous ideas can be brought to life. He looks at disparate threads and braids them together.
-                     He knows that sometimes art is best made with hands and sometimes with spreadsheets. And all of it is made better together.
-                    <br />
-                </p>
-            </div>
-            <br >
-            <div class="row text-center chaortica-fancy-font">
-                <p class="med text-muted col-xs-12">
-                    <a class="something-weird" href="mailto:art@chrisisthis.com" data-mode="2" target="_blank"><span id="weird">let's make something weird together</span></a>
-                </p>
-
-            </div>
-
-            <hr />
-
-            <!-- Projects -->
-            <div class="row text-center">
-                <h2>recent projects</h2>
-                <div class="centered">
-                    <section class="cards">
-                        <article class="card">
-                          <div class="thumbnail">
-
-                            <div class="thumbnail-container">
-                              <div class='img-overlay' style="font-size: 1.2em">RIP Democracy</div>
-                                <img src="https://i.imgur.com/WsahVy0.jpg" class="img-thumbnail" title="Photo Credit: Trevor Tarin"/>
-
-                            </div>
-
-                              <div class="caption">
-
-                                <p class="small"><i>A funeral for democracy on the steps of San Francisco City Hall</i> </p>
-                                <hr />
-                                <p class="small">Organizer, program developer</p>
-                            </div>
-                          </div>
-                        </article><!-- /card-four -->
-                        
-                        <article class="card">
-                          <div class="thumbnail">
-
-                            <div class="thumbnail-container">
-                              <div class='img-overlay' style="font-size: 1.2em">Haight Free Love</div>
-                                <img src="https://i.imgur.com/jGo3jaC.png" class="img-thumbnail" title="Photo Credit: Camille de Nes"/>
-
-                            </div>
-
-                              <div class="caption">
-
-                                <p class="small"><i>A series of community-powered Summer of Love street events</i> </p>
-                                <hr />
-                                <p class="small">Producer, theme development, community engagement organizer</p>
-                            </div>
-                          </div>
-                        </article><!-- /card-four -->
-                        
-                        <article class="card">
-                          <div class="thumbnail">
-                              <div class="thumbnail-container">
-                                <div class='img-overlay' style="font-size: 1.2em">Meow Wolf Outside</div>
-                                <img src="https://i.imgur.com/01Db3J8.jpg" class="img-thumbnail" title="Photo Credit: Kate Russel" />
-
-                              </div>
-                              <div class="caption">
-                                  <p class="small"><i>A cross-Austin immersive scavenger hunt at SxSW 2018</i> </p>
-                                  <hr />
-                                  <p class="small">Participant interaction design, performance (multiple roles), general production support</p>
-                              </div>
-                          </div>
-                        </article>
-
-                        <article class="card">
-                          <div class="thumbnail">
-                            <div class="thumbnail-container">
-                              <div class='img-overlay' style="font-size: 1.2em">Strangetown, USA</div>
-                              <img src="https://i.imgur.com/f7RfK26.jpg" class="img-thumbnail" title="Photo Credit: Whitney Freeman" />
-
-                            </div>
-
-                              <div class="caption">
-                                <p class="small"><i>A community-driven music video for the artist Pancho Morris</i> </p>
-                                <hr />
-                                <p class="small">Producer, narrative development facilitator, factory art design, performance</p>
-                            </div>
-                          </div>
-                        </article>
-
-                        <article class="card">
-                          <div class="thumbnail">
-                            <div class="thumbnail-container">
-                              <div class='img-overlay' style="font-size: 1.2em">CA$H</div>
-                              <img src="https://i.imgur.com/DBPDEEJ.png" class="img-thumbnail" title="Photo Credit: TBD"/>
-
-                            </div>
-
-                              <div class="caption">
-                                <p class="small"><i>An immersive project for cyncially helping artists be more profitable</i> </p>
-                                <hr />
-                                <p class="small">Participant interaction design, propaganda (materials) creation, performance</p>
-                            </div>
-                          </div>
-                        </article><!-- /card-three -->
-
-                        <article class="card">
-                          <div class="thumbnail">
-                            <div class="thumbnail-container">
-                              <div class='img-overlay' style="font-size: 1.2em">Chaortica Cruiselines</div>
-                              <img src="https://i.imgur.com/bv3lKNC.png" class="img-thumbnail" title="Photo Credit: Ready Richman" />
-
-                            </div>
-
-                              <div class="caption">
-
-                                <p class="small"><i>A surrealist, Titanic-esque immersive experience</i> </p>
-                                <hr />
-                                <p class="small">Narrative development, producer, set design, lead performance</p>
-                            </div>
-                          </div>
-                        </article><!-- /card-four -->
-
-                        <article class="card">
-                          <div class="thumbnail">
-
-                            <div class="thumbnail-container">
-                              <div class='img-overlay' style="font-size: 1.2em">Helios and Luna</div>
-                              <img src="https://i.imgur.com/wAvqrvm.jpg" class="img-thumbnail" title="Photo Credit: TBD"/>
-
-                            </div>
-
-                              <div class="caption">
-
-                                <p class="small"><i>A sun/moon cult theme ritual at the Solvana Festival</i> </p>
-                                <hr />
-                                <p class="small">Narrative development, interaction designer, production/performance mangement</p>
-                            </div>
-                          </div>
-                        </article><!-- /card-four -->
-
-                        <article class="card">
-                          <div class="thumbnail">
-                            <div class="thumbnail-container">
-                              <div class='img-overlay' style="font-size: 1.2em">The Shrine of Dough</div>
-                              <img src="https://i.imgur.com/mzwoE7Z.jpg" class="img-thumbnail" title="Photo Credit: TBD" />
-
-                            </div>
-
-                              <div class="caption">
-
-                                  <p class="small"><i>A dough-themed statue and cult following at Burning Man</i> </p>
-                                  <hr />
-                                  <p class="small">Theme/idea development, statue construction, performance lead</p>
-                              </div>
-                          </div>
-                        </article><!-- /card-four -->
-
-                        <article class="card">
-                          <div class="thumbnail">
-                            <div class="thumbnail-container">
-                              <div class='img-overlay' style="font-size: 1.2em">The Anglecan Church</div>
-                              <img src="https://i.imgur.com/uq4w7li.jpg" class="img-thumbnail" title="Photo Credit: Neil Girling"/>
-
-                            </div>
-
-                              <div class="caption">
-
-                                  <p class="small"><i>An immersive project poking at the absurdity of some beliefs</i> </p>
-                                  <hr />
-                                  <p class="small">Participant interaction design, propaganda (materials) creation, performance</p>
-                              </div>
-                          </div>
-                        </article><!-- /card-four -->
-
-                       
-<!--- old stuff
-                        <article class="card">
-                          <div class="thumbnail">
-                            <div class="thumbnail-container">
-                              <div class='img-overlay' style="font-size: 1.2em">No Party Party</div>
-                              <img src="https://i.imgur.com/FfbdrDC.jpg" class="img-thumbnail" alt="Photo Credit: Ad Naka" />
-
-                            </div>
-
-                              <div class="caption">
-
-                                  <p class="small"><i>An immersive project for a Take 3 event</i> </p>
-                                  <hr />
-                                  <p class="small">Participant interaction design, propaganda (materials) creation, performance</p>
-                              </div>
-                          </div>
-                        </article>
-                        
-                        -->
-                    </section>
+      <!-- Working Together -->
+      <div id="work-together" class="container chaortica-content text-center center-block pad-section row">
+        <div class="row text-center fancy-font">
+          <div  class="pad-section">
+            <div class="container">
+              <h2>How can we work together?</h2>
+              <div class="row">
+                <div class="col-sm-4">
+                  <ul id="action-steps" class="list-group list-group-flush">
+                    <li id="stepOne" onclick="clickHide()" class="list-group-item active-li">Creative Visioning</li>
+                    <li id="stepTwo" onclick="clickHide()" class="list-group-item">Production Management & Support</li>
+                    <li id="stepThree" onclick="clickHide()" class="list-group-item">Experiential Design & Execution</li>
+                    <li id="stepFour" onclick="clickHide()" class="list-group-item">Public Shenanigans</li>
+                    <li id="stepFive" onclick="clickHide()" class="list-group-item">Visual Design</li>
                 </div>
+                <div class="action-detail col-sm-7"style="padding-left: 10%">
+                  <div id="stepLongOne" class="display-long">
+                    <h3>Stuck on how to make your project memorable and impactful? Need to figure
+                    out how an experience should work or look? Let's brainstorm together.</h3>
+                  </div>
+                  <div id="stepLongTwo" class="display-hide">
+                    <h3>The successful execution of a creative project often requires substantial coordination.
+                    With my background in business and management, I know how to corral the people, conjure
+                    the spreadsheets, and do what it takes to get it done.</h3>
+                  </div>
+                  <div id="stepLongThree" class="display-hide">
+                    <h3>From intimate workshops to large-scale festivals, I thrive on designing experiences
+                    that engage and delight participants in unexpected ways. </h3>
+                  </div>
+                  <div id="stepLongFour" class="display-hide">
+                    <h3>Our world is facing innumerable challenges and can be hard to get people's attention
+                    on the issues that really matter. Want to engage people publicly and politically?
+                    Let's take shenanigans to the streets.</h3>
+                  </div>
+                  <div id="stepLongFive" class="display-hide">
+                    <h3>Illustrations, designs, schematics - I can make pretty things digitally and with my hands</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-
-
-            </div>  <!-- /portraits -->
-
-            <hr />
-
-            <!-- Photos -->
-            <div class="row text-center">
-
-                <!-- Staircase -->
-                <div class="col-xs-12">
-                    <div class="thumbnail">
-                        <img src="https://scontent.fsnc1-1.fna.fbcdn.net/v/t31.0-8/22712188_10210476970670942_3542659020409166403_o.jpg?_nc_cat=0&oh=01fec53280c0938023226ef5a9acd00e&oe=5B287455" class="img-thumbnail" />
-                        <div class="caption">
-                            <p class="chaortica-fancy-font">check me out:</p>
-
-                        </div>
-                        <div class="row">
-                          <a href="mailto:art@chrisisthis.com" class="fa fa-envelope"></a>
-                          <a href="https://www.facebook.com/chrisrswimmer" class="fa fa-facebook"></a>
-                          <a href="https://twitter.com/chrisrswimmer" class="fa fa-twitter"></a>
-                          <a href="https://www.instagram.com/chris_isthis" class="fa fa-instagram"></a>
-                        </div>
-                        <div class="caption">
-                          <p class="chaortica-fancy-font">or contact me directly at <a href="mailto:art@chrisisthis.com">art@chrisisthis.com</a></p>
-                        </div>
+      <!-- Projects -->
+      <div id="projects" class="container chaortica-content text-center center-block row fancy-font">
+        <h2 class="text-center">Projects</h2>
+        <div class="centered">
+            <section class="cards">
+                <article class="card">
+                  <div class="thumbnail">
+                    <div class="thumbnail-container">
+                      <div class='img-overlay' style="font-size: 1.2em">RIP Democracy</div>
+                        <img src="https://i.imgur.com/WsahVy0.jpg" class="img-thumbnail" title="Photo Credit: Trevor Tarin"/>
                     </div>
-                </div>
+                      <div class="caption">
+                        <p class="small"><i>A funeral for democracy on the steps of San Francisco City Hall</i> </p>
+                        <hr />
+                        <p class="small">Organizer, program developer</p>
+                    </div>
+                  </div>
+                </article><!-- /card-four -->
 
-            </div>
+                <article class="card">
+                  <div class="thumbnail">
+                    <div class="thumbnail-container">
+                      <div class='img-overlay' style="font-size: 1.2em">Haight Free Love</div>
+                        <img src="https://i.imgur.com/jGo3jaC.png" class="img-thumbnail" title="Photo Credit: Camille de Nes"/>
+                    </div>
+                      <div class="caption">
+                        <p class="small"><i>A series of community-powered Summer of Love street events</i> </p>
+                        <hr />
+                        <p class="small">Producer, theme development, community engagement organizer</p>
+                    </div>
+                  </div>
+                </article><!-- /card-four -->
 
-                <hr>
-                <p class="small text-muted text-center">
-                    Chris is a member of <a href="http://kittyhowl.com" target="_blank">Kitty Howl</a>, an irreverent immersive arts collective.
+                <article class="card">
+                  <div class="thumbnail">
+                      <div class="thumbnail-container">
+                        <div class='img-overlay' style="font-size: 1.2em">Meow Wolf Outside</div>
+                        <img src="https://i.imgur.com/01Db3J8.jpg" class="img-thumbnail" title="Photo Credit: Kate Russel" />
+                      </div>
+                      <div class="caption">
+                          <p class="small"><i>A cross-Austin immersive scavenger hunt at SxSW 2018</i> </p>
+                          <hr />
+                          <p class="small">Participant interaction design, performance (multiple roles), general production support</p>
+                      </div>
+                  </div>
+                </article>
 
+                <article class="card">
+                  <div class="thumbnail">
+                    <div class="thumbnail-container">
+                      <div class='img-overlay' style="font-size: 1.2em">Strangetown, USA</div>
+                      <img src="https://i.imgur.com/f7RfK26.jpg" class="img-thumbnail" title="Photo Credit: Whitney Freeman" />
+                    </div>
+                      <div class="caption">
+                        <p class="small"><i>A community-driven music video for the artist Pancho Morris</i> </p>
+                        <hr />
+                        <p class="small">Producer, narrative development facilitator, factory art design, performance</p>
+                    </div>
+                  </div>
+                </article>
 
-                </p>
+                <article class="card">
+                  <div class="thumbnail">
+                    <div class="thumbnail-container">
+                      <div class='img-overlay' style="font-size: 1.2em">CA$H</div>
+                      <img src="https://i.imgur.com/DBPDEEJ.png" class="img-thumbnail" title="Photo Credit: TBD"/>
+                    </div>
+                      <div class="caption">
+                        <p class="small"><i>An immersive project for cyncially helping artists be more profitable</i> </p>
+                        <hr />
+                        <p class="small">Participant interaction design, propaganda (materials) creation, performance</p>
+                    </div>
+                  </div>
+                </article><!-- /card-three -->
 
-            </div>
+                <article class="card">
+                  <div class="thumbnail">
+                    <div class="thumbnail-container">
+                      <div class='img-overlay' style="font-size: 1.2em">Chaortica Cruiselines</div>
+                      <img src="https://i.imgur.com/bv3lKNC.png" class="img-thumbnail" title="Photo Credit: Ready Richman" />
+                    </div>
+                      <div class="caption">
+                        <p class="small"><i>A surrealist, Titanic-esque immersive experience</i> </p>
+                        <hr />
+                        <p class="small">Narrative development, producer, set design, lead performance</p>
+                    </div>
+                  </div>
+                </article><!-- /card-four -->
+
+                <article class="card">
+                  <div class="thumbnail">
+
+                    <div class="thumbnail-container">
+                      <div class='img-overlay' style="font-size: 1.2em">Helios and Luna</div>
+                      <img src="https://i.imgur.com/wAvqrvm.jpg" class="img-thumbnail" title="Photo Credit: TBD"/>
+
+                    </div>
+
+                      <div class="caption">
+
+                        <p class="small"><i>A sun/moon cult theme ritual at the Solvana Festival</i> </p>
+                        <hr />
+                        <p class="small">Narrative development, interaction designer, production/performance mangement</p>
+                    </div>
+                  </div>
+                </article><!-- /card-four -->
+
+                <article class="card">
+                  <div class="thumbnail">
+                    <div class="thumbnail-container">
+                      <div class='img-overlay' style="font-size: 1.2em">The Shrine of Dough</div>
+                      <img src="https://i.imgur.com/mzwoE7Z.jpg" class="img-thumbnail" title="Photo Credit: TBD" />
+
+                    </div>
+
+                      <div class="caption">
+
+                          <p class="small"><i>A dough-themed statue and cult following at Burning Man</i> </p>
+                          <hr />
+                          <p class="small">Theme/idea development, statue construction, performance lead</p>
+                      </div>
+                  </div>
+                </article><!-- /card-four -->
+
+                <article class="card">
+                  <div class="thumbnail">
+                    <div class="thumbnail-container">
+                      <div class='img-overlay' style="font-size: 1.2em">The Anglecan Church</div>
+                      <img src="https://i.imgur.com/uq4w7li.jpg" class="img-thumbnail" title="Photo Credit: Neil Girling"/>
+
+                    </div>
+
+                      <div class="caption">
+
+                          <p class="small"><i>An immersive project poking at the absurdity of some beliefs</i> </p>
+                          <hr />
+                          <p class="small">Participant interaction design, propaganda (materials) creation, performance</p>
+                      </div>
+                  </div>
+                </article><!-- /card-four -->
+
+                <!--- old stuff
+                <article class="card">
+                  <div class="thumbnail">
+                    <div class="thumbnail-container">
+                      <div class='img-overlay' style="font-size: 1.2em">No Party Party</div>
+                      <img src="https://i.imgur.com/FfbdrDC.jpg" class="img-thumbnail" alt="Photo Credit: Ad Naka" />
+
+                    </div>
+
+                      <div class="caption">
+
+                          <p class="small"><i>An immersive project for a Take 3 event</i> </p>
+                          <hr />
+                          <p class="small">Participant interaction design, propaganda (materials) creation, performance</p>
+                      </div>
+                  </div>
+                </article>
+                -->
+            </section>
         </div>
-        <!--  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-        <script  src="index.js"></script> -->
+      </div>
+
+      <!-- Contact -->
+      <div id="contact" class="container chaortica-content text-center center-block row fancy-font">
+          <div >
+            <h2 class="text-center">get in touch:</h2>
+            <div class="row centered">
+              <a href="mailto:art@chrisisthis.com" class="fa fa-envelope"></a>
+              <a href="https://www.facebook.com/chrisrswimmer" class="fa fa-facebook"></a>
+              <a href="https://twitter.com/chrisrswimmer" class="fa fa-twitter"></a>
+              <a href="https://www.instagram.com/chris_isthis" class="fa fa-instagram"></a>
+            </div>
+            <div class="text-center">
+              <p class="fancy-font">or contact me directly at <a href="mailto:art@chrisisthis.com">art@chrisisthis.com</a></p>
+            </div>
+          </div>
+
+          <!-- Footer -->
+          <div>
+              <p class="small text-muted text-center">
+                  Chris is a member of <a href="http://kittyhowl.com" target="_blank">Kitty Howl</a>, an irreverent immersive arts collective.
+              </p>
+          </div>
+
+        </div>
+
+
+
+      <!-- Scripts -->
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+      <script  src="index.js"></script>
 
     </body>
 </html>
